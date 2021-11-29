@@ -3,6 +3,14 @@ This project is almost perfect for S3 hosting, as it's a simple static site, ext
 
 Apologies if the commits are weird, I'm using the github web console and manually uploading files there.
 
+## Credit
+This example in the docs is what I used for the bucket: 
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-s3.html
+
+I then used this for the custom action to put the html in the bucket:
+https://developer.okta.com/blog/2018/07/31/use-aws-cloudformation-to-automate-static-site-deployment-with-s3
+
+
 # Task
 - Deploy the provided static page to AWS
 
@@ -16,6 +24,8 @@ CloudFormation but terraform is also acceptable)
 
 - Commit to your project frequently to show how you are approaching the task
 
+
+
 # Points to consider when architecting the solution
 - Scalability - Its an S3 bucket, it wont need to scale. Here is one that took 3.5 million requests in a day! - https://www.digital-web.com/articles/scalable-hosting-s3/
 
@@ -23,7 +33,7 @@ CloudFormation but terraform is also acceptable)
 
 - Disaster Recovery - S3 is automatically stored accross 3 AZ's per reigon, meaning it should be fairly reliable.
 
-- Deployments - I shall make a pipeline in the cloudformation template
+- Deployments - It wont have a pipeline that auto-deploys, however you can update the stack to pull the latest html
 
 - Testing - due to the simplicity of this, I'm confident it wont need any testing, as long as it works.
 
