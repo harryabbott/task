@@ -7,10 +7,6 @@ Apologies if the commits are weird, I'm using the github web console and manuall
 This example in the docs is what I used for the bucket: 
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-s3.html
 
-I then used this for the custom action to put the html in the bucket:
-https://developer.okta.com/blog/2018/07/31/use-aws-cloudformation-to-automate-static-site-deployment-with-s3
-
-
 # Task
 - Deploy the provided static page to AWS
 
